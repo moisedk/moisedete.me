@@ -4,6 +4,14 @@
 	font-family: 'Roboto+Flex', sans-serif;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior:smooth;
+}
+.body{
+	width:auto;
+	margin: 0% 0% 0%;
+}
+
 .home{
 	height: 100vh;
 	width: 100%;
@@ -12,6 +20,16 @@
 	background-size: cover;
 	background-position: center;
 }
+@media (max-width: 1200px) {
+	.body {
+	  width: max-content;
+	}
+	.home {
+		background-size: contain;
+		background-repeat:no-repeat;
+		background-color: #3c3c4c;
+	}
+  }
 nav{
 	display: flex;
 	align-items: center;
